@@ -1,0 +1,39 @@
+#!/usr/bin/python3
+
+import sys
+import sudoku
+
+################################################################################
+
+if __name__ == '__main__':
+
+	# each Sudoku puzzle block has m rows and n columns
+	(m,n) = map(int, input().split())
+
+	# initialize the puzzle solver
+	puzzle = sudoku.Sudoku(m,n)
+
+	# N = m*n is the number of rows/columns in the puzzle
+	N = puzzle.size()
+
+	# set the initially known values on the puzzle
+	for i in sudoku.crange(1,N):
+		row = input().split()
+		for j in sudoku.crange(1,N):
+			k = row[j-1]
+			if k.isdigit():
+				puzzle.set_cell_value(i,j,int(k))
+
+	# solve the puzzle
+	if not puzzle.solve():
+		sys.stdout.write("Sudoku puzzle is not valid.\n")
+		exit(1)
+
+	# print the solution
+	digits = len(str(N))
+	pad = lambda k : str(k).rjust(digits)
+	for i in sudoku.crange(1,N):
+		for j in sudoku.crange(1,N):
+			k = puzzle.get_cell_value(i,j)
+			sys.stdout.write("%s" % pad(k) + (" " if j < N else ""))
+		sys.stdout.write("\n")

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# enter the directory where this script is located
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+
+for test_input_file in $(ls *.in)
+do
+	echo -n "Run ${test_input_file/.in/}: "
+
+	test_output_file=${test_input_file/.in/.out}
+	diff <(../sudoku-solver < ${test_input_file}) ${test_output_file}
+
+	if [ $? == 0 ]
+	then
+		echo "PASSED"
+	else
+		echo "FAILED"
+		exit 1
+	fi
+done
