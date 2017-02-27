@@ -80,12 +80,12 @@ class Sudoku:
 				self.sudoku_model += sum([self.x[var_name(i,j,k)]
 				                          for i in crange(1,N)]) == 1
 
-		# contraint: each value k appears exactly once in each block (bi,bj)
-		for bi in crange(1,n):
-			for bj in crange(1,m):
+		# contraint: each value k appears exactly once in each block (I,J)
+		for I in crange(1,n):
+			for J in crange(1,m):
 
-				i_low = (bi-1)*m + 1
-				j_low = (bj-1)*n + 1
+				i_low = (I-1)*m + 1
+				j_low = (J-1)*n + 1
 				block_i_values = range(i_low, i_low + m)
 				block_j_values = range(j_low, j_low + n)
 
