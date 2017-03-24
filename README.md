@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/dassencio/sudoku.svg?branch=master)](https://travis-ci.org/dassencio/sudoku/)
+
+
 Description
 ===========
 
@@ -76,7 +79,7 @@ expected output contaning the solution to the puzzle. On Linux, you can execute
 these tests by entering the `tests` subdirectory and running the following
 command:
 
-	./run-tests.sh
+	./run-tests
 
 
 Contributors & Contact Information

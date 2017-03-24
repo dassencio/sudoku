@@ -1,0 +1,25 @@
+# use a C environment: easier to handle the python dependencies
+language: c
+
+dist: trusty
+sudo: required
+
+git:
+  depth: 3
+
+install:
+  - python3 --version
+  - sudo apt-get install -qq python3-pip
+  - sudo apt-get install -qq coinor-cbc
+  - sudo pip3 install pulp
+
+script:
+  - cd tests
+  - ./run-tests
+
+notifications:
+  email:
+    recipients:
+      - diego@assencio.com
+    on_success: change
+    on_failure: always
