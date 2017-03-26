@@ -5,28 +5,28 @@ Description
 ===========
 
 A Sudoku puzzle solver (written in Python 3) which models and solves the puzzle
-as an Integer Linear Programming (ILP) problem.
+as an [Integer Linear Programming](https://diego.assencio.com/?index=25ea1e49ca59de51b4ef6885dcc3ee3b)
+(ILP) problem.
 
 
 License
 =======
 
 All code from this project is licensed under the GPLv3. See the `LICENSE` file
-for more.
+for more information.
 
 
-Required Libraries
-==================
+Required modules
+================
 
-This project needs the [PuLP](https://pypi.python.org/pypi/PuLP) module to work.
-On Ubuntu/Debian, you can install this module by running the following command
-on a terminal:
+This project needs the `pulp` module to work. On Ubuntu, you can install
+it with the following command:
 
 	sudo apt-get install python3-pulp
 
 
-Instructions
-============
+Usage instructions
+==================
 
 This projects illustrates how a Sudoku puzzle can be formulated as an Integer
 Linear Programming problem. It contains two main files:
@@ -67,7 +67,7 @@ The output is the solution to the puzzle:
 	3 2 5 6 1 4
 
 
-Running the Validation Tests
+Running the validation tests
 ============================
 
 This repository comes with tests which can be used to validate the solver. These
@@ -75,14 +75,14 @@ tests also illustrate the input format discussed above.
 
 Each test contains an associated input file (e.g. `test05.in`) which defines the
 puzzle, and an associated output file (e.g. `test05.out`) which specifies the
-expected output contaning the solution to the puzzle. On Linux, you can execute
-these tests by entering the `tests` subdirectory and running the following
-command:
+expected output contaning the solution to the puzzle. These files are located
+in the `tests` subdirectory. On Linux, you can execute all these tests by
+running the `run-tests` script:
 
 	./run-tests
 
 
-Contributors & Contact Information
+Contributors & contact information
 ==================================
 
 Diego Assencio / diego@assencio.com

@@ -14,7 +14,6 @@ install:
   - sudo pip3 install pulp
 
 script:
-  - cd tests
   - ./run-tests
 
 notifications:
