@@ -1,5 +1,4 @@
-# use a C environment: easier to handle the python dependencies
-language: c
+language: generic
 
 dist: trusty
 sudo: required
