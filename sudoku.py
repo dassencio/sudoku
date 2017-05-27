@@ -41,8 +41,8 @@ class Sudoku:
 
 		"""Initializes a solver for a Sudoku puzzle with block size m×n.
 
-		m: the number of rows per puzzle block
-		n: the number of columns per puzzle block
+		m: The number of rows per puzzle block.
+		n: The number of columns per puzzle block.
 		"""
 
 		self.m = m

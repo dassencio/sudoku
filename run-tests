@@ -10,7 +10,7 @@ do
 	test_output_file=${test_input_file/.in/.out}
 	diff <(./sudoku-solver < ${test_input_file}) ${test_output_file}
 
-	if [ $? == 0 ]
+	if [ $? = 0 ]
 	then
 		echo "PASSED"
 	else
