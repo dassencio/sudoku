@@ -22,7 +22,8 @@ def crange(a,b):
 
 class Sudoku:
 
-	"""A Sudoku puzzle solver class.
+	"""
+	A Sudoku puzzle solver class.
 
 	The dimensions of a Sudoku puzzle are defined by the size of a puzzle
 	block. Each block has m rows and n columns. Since each block has m×n
@@ -41,7 +42,8 @@ class Sudoku:
 
 	def __init__(self, m, n):
 
-		"""Initializes a solver for a Sudoku puzzle with block size m×n.
+		"""
+		Initializes a solver for a Sudoku puzzle with block size m×n.
 
 		m: The number of rows per puzzle block.
 		n: The number of columns per puzzle block.
@@ -104,7 +106,8 @@ class Sudoku:
 
 	def set_cell_value(self, i, j, k):
 
-		"""Sets the value of cell (i,j) to k.
+		"""
+		Sets the value of cell (i,j) to k.
 
 		This function will throw a RuntimeError exception if called
 		after the puzzle has already been solved.
@@ -117,8 +120,10 @@ class Sudoku:
 
 	def get_cell_value(self, i, j):
 
-		"""Returns the value of cell (i,j) or None if the puzzle has not
-		yet been solved."""
+		"""
+		Returns the value of cell (i,j) or None if the puzzle has not
+		yet been solved.
+		"""
 
 		N = self.size()
 
@@ -129,8 +134,10 @@ class Sudoku:
 
 	def solve(self):
 
-		"""Solves the puzzle and returns True if the puzzle is solvable,
-		False otherwise."""
+		"""
+		Solves the puzzle and returns True if the puzzle is solvable,
+		False otherwise.
+		"""
 
 		status = self.sudoku_model.solve(pulp.COIN(msg=0))
 		return status == pulp.LpStatusOptimal
