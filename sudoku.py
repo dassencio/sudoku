@@ -1,3 +1,5 @@
+"""A module containing tools for solving Sudoku puzzles."""
+
 import pulp
 
 ################################################################################
