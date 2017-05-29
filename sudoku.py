@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """A module containing tools for solving Sudoku puzzles."""
 
 import pulp
