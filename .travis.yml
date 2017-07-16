@@ -1,16 +1,22 @@
-language: generic
+language: python
 
 dist: trusty
 sudo: required
+
+python:
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+  - nightly
 
 git:
   depth: 3
 
 install:
-  - python3 --version
-  - sudo apt-get install -qq python3-pip
+  - pip3 install pulp
   - sudo apt-get install -qq coinor-cbc
-  - sudo pip3 install pulp
 
 script:
   - ./run-tests
