@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # enter the directory where this script is located
 cd "$(dirname "${BASH_SOURCE[0]}")"
