@@ -16,7 +16,6 @@ git:
 
 install:
   - pip3 install pulp
-  - sudo apt-get install -qq coinor-cbc
 
 script:
   - ./run-tests

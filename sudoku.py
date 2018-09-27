@@ -133,7 +133,7 @@ class Sudoku:
         False otherwise.
         """
 
-        status = self.sudoku_model.solve(pulp.COIN(msg=0))
+        status = self.sudoku_model.solve()
         return status == pulp.LpStatusOptimal
 
     def size(self):
