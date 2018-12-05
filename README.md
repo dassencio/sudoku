@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dassencio/sudoku.svg?branch=master)](https://travis-ci.org/dassencio/sudoku/)
+[![Build Status](https://api.travis-ci.com/dassencio/sudoku.svg?branch=master)](https://travis-ci.com/dassencio/sudoku)
 
 # Description
 
