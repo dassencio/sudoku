@@ -16,7 +16,7 @@ file for more information.
 
 The `pulp` module is used. You can install it with the following command:
 
-    pip3 install pulp
+    pip3 install pulp==2.1
 
 # Usage instructions
 

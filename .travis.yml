@@ -14,7 +14,7 @@ git:
   depth: 3
 
 install:
-  - pip3 install pulp
+  - pip3 install pulp==2.1
 
 script:
   - ./run-tests
