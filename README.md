@@ -66,8 +66,8 @@ tests also illustrate the input format discussed above.
 Each test contains an associated input file (e.g. `test05.in`) which defines the
 puzzle, and an associated output file (e.g. `test05.out`) which specifies the
 expected output contaning the solution to the puzzle. These files are located
-in the `tests` subdirectory. On Linux, you can execute all these tests by
-running the `run-tests` script:
+in the `tests` subdirectory. You can execute all these tests by running the
+`run-tests` script:
 
     ./run-tests
 
