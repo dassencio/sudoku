@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.com/dassencio/sudoku.svg?branch=master)](https://travis-ci.com/dassencio/sudoku)
+![Functional tests](https://github.com/dassencio/sudoku/workflows/Functional%20tests/badge.svg)
 
 # Description
 
@@ -58,7 +58,7 @@ The output is the solution to the puzzle:
     4 6 1 3 2 5
     3 2 5 6 1 4
 
-# Running the validation tests
+# Running the functional tests
 
 This repository comes with tests which can be used to validate the solver. These
 tests also illustrate the input format discussed above.
